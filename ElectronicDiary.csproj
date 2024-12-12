@@ -98,14 +98,28 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class\DiaryRecord.cs" />
+    <Compile Include="Class\Users.cs" />
     <Compile Include="SqlConnect\SqlConnector.cs" />
+    <Compile Include="Windows\Student.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Student.Designer.cs">
+      <DependentUpon>Student.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Ticher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Ticher.Designer.cs">
+      <DependentUpon>Ticher.cs</DependentUpon>
+    </Compile>
     <Compile Include="Windows\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Windows\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="Class\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Windows\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -119,6 +133,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Windows\Ticher.resx">
+      <DependentUpon>Ticher.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
